@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalcSuite Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-bg"></div>
+  <main class="workspace">
+    <aside class="sidebar">
+      <div class="brand-card">
+        <div class="brand-glow" aria-hidden="true"></div>
+        <p class="brand-kicker">Professional calculator suite</p>
+        <h1>CalcSuite Pro</h1>
+        <p class="brand-copy">
+          One polished website with 100+ calculators for daily work, finance, study,
+          planning, health, and scientific calculations.
+        </p>
+        <div class="brand-actions">
+          <select id="theme-select" class="theme-select" aria-label="Theme selector">
+            <option value="sand">Sand</option>
+            <option value="night">Night</option>
+            <option value="aqua">Aqua</option>
+            <option value="studio">Studio</option>
+          </select>
+          <button id="mobile-nav-toggle" class="ghost-button mobile-only" type="button">Menu</button>
+        </div>
+      </div>
+
+      <div class="nav-panel" id="nav-panel">
+        <div class="nav-head">
+          <span>Calculators</span>
+          <span id="calculator-count"></span>
+        </div>
+        <div class="nav-search-wrap">
+          <input id="calculator-search" class="nav-search" type="search" placeholder="Search calculators..." aria-label="Search calculators">
+        </div>
+        <div id="calculator-nav" class="calculator-nav" aria-label="Calculator list"></div>
+      </div>
+    </aside>
+
+    <section class="main-area">
+      <section class="hero-panel">
+        <div class="hero-copy-block">
+          <p class="section-kicker">Multi-calculator dashboard</p>
+          <h2 id="active-title">Standard Calculator</h2>
+          <p id="active-description" class="hero-description"></p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-grid"></div>
+          <div class="visual-orbit orbit-a"></div>
+          <div class="visual-orbit orbit-b"></div>
+          <div class="visual-orbit orbit-c"></div>
+          <div class="visual-pulse pulse-a"></div>
+          <div class="visual-pulse pulse-b"></div>
+          <div class="visual-core">
+            <span id="hero-tools-count">100+</span>
+            <small>workable tools</small>
+          </div>
+        </div>
+        <div class="hero-metrics">
+          <article class="metric-card">
+            <span class="metric-label">Modes</span>
+            <strong id="metric-modes">0</strong>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Categories</span>
+            <strong id="metric-categories">0</strong>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Recent Results</span>
+            <strong id="metric-history">0</strong>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Theme</span>
+            <strong id="metric-theme">Studio</strong>
+          </article>
+        </div>
+        <div class="dashboard-tools">
+          <div class="panel-header">
+            <h3>Included Tools</h3>
+          </div>
+          <div id="category-list" class="chip-list dashboard-chip-list"></div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="calculator-stage" id="calculator-stage">
+          <div class="stage-head">
+            <div id="calculator-toolbar" class="calculator-toolbar"></div>
+            <div class="stage-actions">
+              <button id="stage-fullscreen" class="ghost-button" type="button">Fullscreen</button>
+            </div>
+          </div>
+          <div id="calculator-content" class="calculator-content"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <strong>CalcSuite Pro</strong>
+      <span>Copyright 2026 CalcSuite Pro. All rights reserved.</span>
+      <span>Unauthorized reuse of the CalcSuite Pro name, interface, or bundled calculator suite is prohibited.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
